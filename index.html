@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingo Prediction Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wingo Prediction Tool</h1>
+        <p>Period number daalo, phir last 5 results (comma se alag, jaise 1,2,3,4,5).</p>
+        
+        <form id="predictionForm">
+            <label for="period">Period Number:</label>
+            <input type="text" id="period" placeholder="Period number daalo" required>
+            
+            <label for="results">Last 5 Results (comma separated):</label>
+            <input type="text" id="results" placeholder="1,2,3,4,5" required>
+            
+            <button type="submit">Predict Karo</button>
+        </form>
+        
+        <div id="result"></div>
+        
+        <div class="telegram-link">
+            <a href="https://t.me/+NiYRAlEIBj1mNTQ1" target="_blank">Mera Telegram Channel Join Karo</a>
+            <!-- Yahan apna Telegram channel ka link daalo, jaise https://t.me/fantushchannel -->
+        </div>
+        
+        <footer>
+            <p><strong>Note:</strong> Yeh simple tool hai educational purpose ke liye. Real gambling mein risk hai. Seed ke liye agar better random chahiye to 'seedrandom' JS library add karo.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
