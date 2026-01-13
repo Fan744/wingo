@@ -1,0 +1,126 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #00FF00;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-shadow: 0 0 5px #00FF00;
+}
+.container {
+    background: #111111;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 15px #00FF00;
+    max-width: 500px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #00FF00;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p {
+    text-align: center;
+    color: #00FF00;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00FF00;
+}
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+}
+input:focus {
+    box-shadow: 0 0 10px #00FF00;
+    outline: none;
+}
+button {
+    padding: 12px;
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover {
+    background-color: #00FF00;
+    color: #000000;
+    box-shadow: 0 0 15px #00FF00;
+}
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #111111;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #00FF00;
+    box-shadow: 0 0 10px #00FF00;
+}
+.telegram-link {
+    text-align: center;
+    margin-top: 30px;
+}
+.telegram-link a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #000000;
+    color: #00FF00;
+    text-decoration: none;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+.telegram-link a:hover {
+    background-color: #00FF00;
+    color: #000000;
+    box-shadow: 0 0 15px #00FF00;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #00FF00;
+    font-size: 14px;
+}
+/* Hacker animation: Scanning lines */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 255, 0, 0.1));
+    animation: scan 2s linear infinite;
+    pointer-events: none;
+}
+@keyframes scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
